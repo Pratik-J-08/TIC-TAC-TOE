@@ -1,5 +1,92 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url(abstract-blur-gradient-background-vector.jpg);
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.game-info{
+    color: white;
+    top: 3rem;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+}
+
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid #ffffff ;
+    border-bottom: 2px solid #ffffff ;
+}
+
+.box7, .box8{
+    border-right: 2px solid #ffffff ;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid #ffffff ;
+}
+
+
+.btn{
+    background-color: #121212;
+    border: 1px solid #121212;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(0,255,0,0.3);
+}
+
